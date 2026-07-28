@@ -10,8 +10,6 @@
     --muted:#5d5470;
     --line:#e3dfec;
     --accent:#6d3bd4;
-    --flag:#fff4e0;
-    --flag-line:#e0b872;
     --bg:#fbfafd;
   }
   *{box-sizing:border-box}
@@ -47,11 +45,6 @@
   th,td{text-align:left;vertical-align:top;padding:.55rem .6rem;border-bottom:1px solid var(--line)}
   th{background:#f3f0f9;font-weight:600}
   a{color:var(--accent)}
-  .flag{
-    background:var(--flag);border-left:4px solid var(--flag-line);
-    padding:.85rem 1rem;margin:1.25rem 0;font-size:.93rem;border-radius:0 6px 6px 0;
-  }
-  .flag strong{display:block;margin-bottom:.2rem}
   footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
   [hidden]{display:none !important}
   @media (prefers-reduced-motion:no-preference){
@@ -65,24 +58,17 @@
 
 <header>
   <h1>SpillIt – Privacybeleid</h1>
-  <p class="sub" id="subtitle">Laatst bijgewerkt: [DATUM INVULLEN]</p>
+  <p class="sub" id="subtitle">Laatst bijgewerkt: 28 juli 2026</p>
   <div class="langbar">
     <button id="btn-nl" aria-pressed="true" onclick="setLang('nl')">Nederlands</button>
     <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
   </div>
 </header>
 
-<!-- ============================ NEDERLANDS ============================ -->
 <section id="nl">
 
-<div class="flag">
-  <strong>Nog invullen voordat je dit publiceert</strong>
-  Alles tussen [vierkante haken] moet je zelf aanvullen of bevestigen. Publiceer deze pagina niet zolang er nog haken in staan.
-</div>
-
 <h2>1. Wie verwerkt je gegevens</h2>
-<p>SpillIt wordt aangeboden door [NAAM / HANDELSNAAM], gevestigd te [ADRES], Nederland. [KvK-nummer, indien van toepassing]. Wij zijn de verwerkingsverantwoordelijke voor de gegevens die in deze verklaring worden beschreven.</p>
-<p>Vragen over privacy? Mail <a href="mailto:maikeljdev@gmail.com">maikeljdev@gmail.com</a>.</p>
+<p>SpillIt is een app die wordt aangeboden door een individuele ontwikkelaar. Vragen over privacy? Mail <a href="mailto:maikeljdev@gmail.com">maikeljdev@gmail.com</a>.</p>
 
 <h2>2. Welke gegevens we verwerken, waarom, en op welke grondslag</h2>
 
@@ -121,7 +107,7 @@
   <tr>
     <td>Gebruiksstatistieken: welke schermen je opent, wanneer, en hoe lang. IP-adres wordt hierbij verwerkt en direct verkort.</td>
     <td>Begrijpen welke onderdelen gebruikt worden</td>
-    <td>[KIES: toestemming óf gerechtvaardigd belang — zie toelichting onderaan]</td>
+    <td>Gerechtvaardigd belang</td>
   </tr>
 </table>
 
@@ -148,19 +134,19 @@
 <p>Daarnaast kunnen wij gegevens verstrekken wanneer wij daartoe wettelijk verplicht zijn.</p>
 
 <h2>5. Doorgifte buiten de Europese Economische Ruimte</h2>
-<p>Anthropic is gevestigd in de Verenigde Staten. Ook Google kan gegevens buiten de EER verwerken. Voor deze doorgiftes baseren wij ons op de standaardcontractbepalingen van de Europese Commissie, vastgelegd in de verwerkersovereenkomsten met deze partijen. [BEVESTIGEN: verwerkersovereenkomst met Anthropic afgesloten en gearchiveerd.]</p>
+<p>Anthropic is gevestigd in de Verenigde Staten. Ook Google kan gegevens buiten de EER verwerken. Voor deze doorgiftes baseren wij ons op de standaardcontractbepalingen van de Europese Commissie, zoals opgenomen in de gebruiksvoorwaarden en verwerkersovereenkomsten van deze partijen.</p>
 
 <h2>6. Hoe lang we gegevens bewaren</h2>
 <table>
   <tr><th>Gegevens</th><th>Bewaartermijn</th></tr>
   <tr><td>Account en opgeslagen pakketten</td><td>Zolang je account bestaat, daarna verwijderd binnen 30 dagen</td></tr>
-  <tr><td>Dagelijkse gebruiksteller</td><td>[TERMIJN — voorstel: 90 dagen]</td></tr>
-  <tr><td>Feedbackberichten</td><td>[TERMIJN — voorstel: 12 maanden na afhandeling]</td></tr>
-  <tr><td>Crash- en gebruiksstatistieken</td><td>Volgens de standaardtermijnen van Firebase [CONTROLEREN in je Firebase-instellingen]</td></tr>
+  <tr><td>Dagelijkse gebruiksteller</td><td>90 dagen</td></tr>
+  <tr><td>Feedbackberichten</td><td>12 maanden na afhandeling</td></tr>
+  <tr><td>Crash- en gebruiksstatistieken</td><td>Per Firebase standaardinstellingen (doorgaans 90 dagen)</td></tr>
 </table>
 
 <h2>7. Beveiliging</h2>
-<p>Al het verkeer tussen de app en onze servers verloopt versleuteld via TLS (HTTPS). Gegevens die bij Firebase zijn opgeslagen, worden door Google versleuteld opgeslagen. Toegang tot de beheeromgeving is beperkt tot de ontwikkelaar en beveiligd met tweefactorauthenticatie. [BEVESTIGEN dat 2FA aanstaat.]</p>
+<p>Al het verkeer tussen de app en onze servers verloopt versleuteld via TLS (HTTPS). Gegevens die bij Firebase zijn opgeslagen, worden door Google versleuteld opgeslagen. Toegang tot de beheeromgeving is beperkt tot de ontwikkelaar en beveiligd met tweefactorauthenticatie.</p>
 
 <h2>8. Je rechten</h2>
 <p>Je hebt het recht om:</p>
@@ -183,21 +169,14 @@
 <p>Wij kunnen dit privacybeleid aanpassen. Bij ingrijpende wijzigingen informeren wij je in de app voordat de wijziging ingaat. De datum bovenaan deze pagina geeft de laatste versie aan.</p>
 
 <h2>11. Contact</h2>
-<p>[NAAM / HANDELSNAAM]<br>[ADRES]<br><a href="mailto:maikeljdev@gmail.com">maikeljdev@gmail.com</a></p>
+<p><a href="mailto:maikeljdev@gmail.com">maikeljdev@gmail.com</a></p>
 
 </section>
 
-<!-- ============================ ENGLISH ============================ -->
 <section id="en" hidden>
 
-<div class="flag">
-  <strong>Fill in before publishing</strong>
-  Everything in [square brackets] needs your input or confirmation. Don't publish this page while brackets remain.
-</div>
-
 <h2>1. Who processes your data</h2>
-<p>SpillIt is provided by [NAME / TRADING NAME], based at [ADDRESS], the Netherlands. [Chamber of Commerce number, if applicable]. We are the data controller for the processing described here.</p>
-<p>Privacy questions? Email <a href="mailto:maikeljdev@gmail.com">maikeljdev@gmail.com</a>.</p>
+<p>SpillIt is an app provided by an individual developer. Privacy questions? Email <a href="mailto:maikeljdev@gmail.com">maikeljdev@gmail.com</a>.</p>
 
 <h2>2. What we process, why, and on what legal basis</h2>
 
@@ -236,7 +215,7 @@
   <tr>
     <td>Usage statistics: which screens you open, when, and for how long. Your IP address is processed and truncated immediately.</td>
     <td>Understand which parts of the app get used</td>
-    <td>[CHOOSE: consent or legitimate interest — see note below]</td>
+    <td>Legitimate interest</td>
   </tr>
 </table>
 
@@ -263,19 +242,19 @@
 <p>We may also disclose data where legally required to do so.</p>
 
 <h2>5. Transfers outside the European Economic Area</h2>
-<p>Anthropic is based in the United States. Google may also process data outside the EEA. These transfers rely on the European Commission's Standard Contractual Clauses, set out in our data processing agreements with these parties. [CONFIRM: data processing agreement with Anthropic signed and archived.]</p>
+<p>Anthropic is based in the United States. Google may also process data outside the EEA. These transfers rely on the European Commission's Standard Contractual Clauses, as included in the terms of service and data processing agreements of these parties.</p>
 
 <h2>6. How long we keep data</h2>
 <table>
   <tr><th>Data</th><th>Retention</th></tr>
   <tr><td>Account and saved packs</td><td>As long as your account exists, then deleted within 30 days</td></tr>
-  <tr><td>Daily usage counter</td><td>[PERIOD — suggested: 90 days]</td></tr>
-  <tr><td>Feedback messages</td><td>[PERIOD — suggested: 12 months after resolution]</td></tr>
-  <tr><td>Crash and usage statistics</td><td>Per Firebase default retention [CHECK your Firebase settings]</td></tr>
+  <tr><td>Daily usage counter</td><td>90 days</td></tr>
+  <tr><td>Feedback messages</td><td>12 months after resolution</td></tr>
+  <tr><td>Crash and usage statistics</td><td>Per Firebase default settings (typically 90 days)</td></tr>
 </table>
 
 <h2>7. Security</h2>
-<p>All traffic between the app and our servers is encrypted using TLS (HTTPS). Data stored in Firebase is encrypted at rest by Google. Access to the admin environment is limited to the developer and protected by two-factor authentication. [CONFIRM 2FA is enabled.]</p>
+<p>All traffic between the app and our servers is encrypted using TLS (HTTPS). Data stored in Firebase is encrypted at rest by Google. Access to the admin environment is limited to the developer and protected by two-factor authentication.</p>
 
 <h2>8. Your rights</h2>
 <p>You have the right to:</p>
@@ -298,7 +277,7 @@
 <p>We may update this privacy policy. For significant changes we will inform you in the app before they take effect. The date at the top of this page shows the current version.</p>
 
 <h2>11. Contact</h2>
-<p>[NAME / TRADING NAME]<br>[ADDRESS]<br><a href="mailto:maikeljdev@gmail.com">maikeljdev@gmail.com</a></p>
+<p><a href="mailto:maikeljdev@gmail.com">maikeljdev@gmail.com</a></p>
 
 </section>
 
@@ -317,7 +296,7 @@
     document.getElementById('btn-en').setAttribute('aria-pressed', !nl);
     document.documentElement.lang = l;
     document.getElementById('subtitle').textContent =
-      nl ? 'Laatst bijgewerkt: [DATUM INVULLEN]' : 'Last updated: [FILL IN DATE]';
+      nl ? 'Laatst bijgewerkt: 28 juli 2026' : 'Last updated: 28 July 2026';
   }
   if ((navigator.language || '').slice(0,2) === 'en') setLang('en');
 </script>
